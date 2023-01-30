@@ -1,6 +1,12 @@
 # ReverseWOL
 Lets you turn off your PC with a WOL packet
 
-To make this functional on start up you have to create a shortcut of the file with the following parameters C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe "& 'C:\Users\<PATH>\<To>\reversewol.ps1'" -WindowStyle Hidden
+Replaced the .PS1 script by itself with a batch file to help with installing ReverseWOL as a windows service allowing it to run on startup.
+ 
+ 1. Extract the zip, Edit the .bat file first with notepad. 
+ 
+ 2. Change the file path of the script ("C:\<Users>\<file_path>\reversewol.ps1") and replace it with the location of the reversewol.ps1 script in your system
 
-Then move that shortcut to the Startup Folder, you can quickly access it by WinKey+R and typing shell:startup or you can find it here C:\Users\<User>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+ 3. Close the batch file and run it as admin
+ 
+ 4. You now have Reverse Wake On Lan Abilities, using the same app for WOL you can shut off your PC
